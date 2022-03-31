@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혁신기업 데이터뱅크</title>
+
+    <!-- <link rel="shortcut icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="../../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../../inc/resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/slick.css">
+
+    <link rel="stylesheet" href="../../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../../inc/resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/common.css"> -->
+    <link rel="stylesheet" href="../../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../../inc/resource/css/sub.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/test.css"> -->
+
+    <script src="../../inc/resource/js/popper.js"></script>
+    <script src="../../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../../inc/resource/js/swiper.min.js"></script>
+    <script src="../../inc/resource/js/slick.min.js"></script>
+    <script src="../../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../../inc/resource/js/common.js"></script>
+    <script src="../../inc/resource/js/main.js"></script>
+
+    <script src="../../inc/resource/js/ie11CustomProperties.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+
+            <div class="header d-flex">
+                <div class="header__inner d-flex align-items-center">
+                    <div class="header__logo">
+                        <a href="javascript:void(0)"><img src="../../inc/resource/image/logo__sub.png" alt=""></a>
+                    </div>
+                    <div class="header__gnb">
+                        <div class="gnb">
+                            <div class="gnb__inner">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="javascript:void(0)">소개</a></li>
+                                    <li><a href="javascript:void(0)">혁신기업</a></li>
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__utility d-flex justify-content-end">
+                        <div class="button-home">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon home"></i>
+                                <p>HOME</p>
+                            </button>
+                        </div>
+                        <div class="button-join">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon join"></i>
+                                <p>JOIN</p>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon login"></i>
+                                <p>LOGIN</p>
+                            </button>
+                        </div>
+                        <div class="sitemap d-flex flex-column align-items-center justify-content-center">
+                            <!-- <button type="button" class="sitemap-button">
+                                <div class="sitemap-buttonwrap d-flex justify-content-between flex-column">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button> -->
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon menu"></i>
+                                <p>MENU</p>
+                            </button>
+                            <div class="sitemap_cont">
+                                <em class="bg"></em>
+                                <!-- sitemap_inner -->
+                                <div class="d-flex m-sitetop">
+                                    <div class="m-sitetop_right">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <div class="sitemap_inner">
+                                    <ul>
+                                        <!-- 시민참여프로그램 -->
+                                        <li class="sm_dep"><a href="javascript:void(0)" class="sm_dep_m">시민참여프로그램</a>
+                                            <div class="sm_dep2">
+                                                <ul class="sm_li_dep">
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=traking"
+                                                            class="sm_dep_m2">서울트레킹</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=skating"
+                                                            class="sm_dep_m2">가족스케이팅교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=famliy"
+                                                            class="sm_dep_m2">가족수상스포츠교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=parkgolf"
+                                                            class="sm_dep_m2">가족파크골프교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=camp"
+                                                            class="sm_dep_m2">가족스포츠캠프</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=workleague"
+                                                            class="sm_dep_m2">직장인스포츠리그</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=gym"
+                                                            class="sm_dep_m2">찾아가는 체육관</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- //시민참여프로그램 -->
+                                    </ul>
+                                    <div class="m-sitetop_right pc">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <!-- //sitemap_inner -->
+                            </div>
+                        </div>
+                        <!--//sitemap-->
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="u-page-breadcrumb sub p-0">
+                    <div class="u-page-breadcrumb__wrap">
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--home">
+                            <a href="/user/main/main" class="u-page-breadcrumb__link">메인</a>
+                        </div>
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--last">
+                            <a href="javascript:void(0);" class="u-page-breadcrumb__link">과제검색</a>
+                            <ul class="u-page-list  u-page-list--depth2">
+                                <li class="u-page-list__item active">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제 DB 소개</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/search/list" class="u-page-list__link">과제검색</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제통계</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/notice/list" class="u-page-list__link">공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__core">
+                    <h1 class="sub-title">공지사항</h1>
+
+
+                    <div class="board-view-header">
+                        <h5 class="m-0">집단에너지사업 허가신청사항 알림(부산 에코델타시티 천수구역)</h5>
+                        <ul class="d-flex justify-content-center">
+                            <li>작성자 : 관리자</li>
+                            <li>작성일 : 2021-07-13 </li>
+                            <li>조회수 : 8</li>
+                        </ul>
+                    </div>
+
+                    <div class="board-view-file">
+                        <div class="board-view-file">
+                            <a href="/storage/storage_fileDown/20210730_통계.xls/20210730000000000008">
+                                20210730_통계.xls
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="board-view-txt"><p>집단에너지사업 허가신청사항 알림(산업통상자원부 공고 제2013-128호 근거)
+                            집단에너지사업법 제5조에 의거 2013. 6. 17.일 집단에너지 공급대상지역으로 지정 공고한 아래 지구에 대하여 
+                            동법 제9조에 의하여 사업허가신청이 있었음을 알려드립니다.
+                            
+                            ■ 사업허가신청 현황
+                            ㅇ 부산 에코델타시티 천수구역
+                             - 신청자  부산도시가스
+                             - 신청일  2021. 6. 17.
+                             - 접수일  2021. 6. 17.
+                            
+                            참고 동일한 공급구역에 다수인이 사업허가를 신청(최초 사업허가신청서 접수일로부터 30일 이내)할 경우 
+                            “집단에너지사업허가 대상자 선정기준”에 의거 사업허가 대상자를 선정할 계획임
+                            
+                             신청마감은 접수일로부터 30일인 2021. 7. 30. (공휴일인 경우 익일까지 신청 접수) </p>
+                    </div>
+
+                    <div class="board-view-prev">
+                        <table summary="이전글과 다음글을 나타내는 표입니다.">
+                            <caption>이전글 다음글</caption>
+                            <colgroup>
+                                <col style="width:9rem">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span class="box">이전</span></th>
+                                    <td class="al" colspan="2">
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);">산업통상자원부 사칭 스미싱 문자 주의 권고</a>
+                                            <span class="ml-auto">2021-05-17 | 356</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="box">다음</span></th>
+                                    <td class="al">
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);">정부보조금 부정수급 집중신고기간 운영」안내</a>
+                                            <span class="ml-auto">2021-05-17 | 356</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="button-wrap text-center">
+                        <button type="button">목록</button>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- <div style="margin-top: 174rem;"></div> -->
+        <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img05.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="footer__etc">
+                        <div class="footer__logo text-center">
+                            <img src="../../inc/resource/image/logo__footer.png" alt="">
+                        </div>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="javascript:void(0)">서비스이용약관</a></li>
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                        <p>06152 서울특별시 강남구 테헤란로 305 한국기술센터 2~7층, 14층&nbsp;&nbsp;&nbsp;&nbsp;테헤란로 309 삼성제일빌딩 4,
+                            9층&nbsp;&nbsp;&nbsp;&nbsp; TEL. 02-6009-3000</p>
+                        <p>Copyrightⓒ 2021 혁신기업데이터뱅크 All rights reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    $(function () {
+
+
+
+
+
+
+    })
+</script>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혁신기업 데이터뱅크</title>
+
+    <!-- <link rel="shortcut icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="../../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../../inc/resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/slick.css">
+
+    <link rel="stylesheet" href="../../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../../inc/resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/common.css"> -->
+    <link rel="stylesheet" href="../../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../../inc/resource/css/sub.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/test.css"> -->
+
+    <script src="../../inc/resource/js/popper.js"></script>
+    <script src="../../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../../inc/resource/js/swiper.min.js"></script>
+    <script src="../../inc/resource/js/slick.min.js"></script>
+    <script src="../../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../../inc/resource/js/common.js"></script>
+    <script src="../../inc/resource/js/main.js"></script>
+
+    <script src="../../inc/resource/js/ie11CustomProperties.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+
+            <div class="header d-flex">
+                <div class="header__inner d-flex align-items-center">
+                    <div class="header__logo">
+                        <a href="javascript:void(0)"><img src="../../inc/resource/image/logo__sub.png" alt=""></a>
+                    </div>
+                    <div class="header__gnb">
+                        <div class="gnb">
+                            <div class="gnb__inner">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="javascript:void(0)">소개</a></li>
+                                    <li><a href="javascript:void(0)">혁신기업</a></li>
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__utility d-flex justify-content-end">
+                        <div class="button-home">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon home"></i>
+                                <p>HOME</p>
+                            </button>
+                        </div>
+                        <div class="button-join">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon join"></i>
+                                <p>JOIN</p>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon login"></i>
+                                <p>LOGIN</p>
+                            </button>
+                        </div>
+                        <div class="sitemap d-flex flex-column align-items-center justify-content-center">
+                            <!-- <button type="button" class="sitemap-button">
+                                <div class="sitemap-buttonwrap d-flex justify-content-between flex-column">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button> -->
+                            <button type="button"
+                                class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon menu"></i>
+                                <p>MENU</p>
+                            </button>
+                            <div class="sitemap_cont">
+                                <em class="bg"></em>
+                                <!-- sitemap_inner -->
+                                <div class="d-flex m-sitetop">
+                                    <div class="m-sitetop_right">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <div class="sitemap_inner">
+                                    <ul>
+                                        <!-- 시민참여프로그램 -->
+                                        <li class="sm_dep"><a href="javascript:void(0)" class="sm_dep_m">시민참여프로그램</a>
+                                            <div class="sm_dep2">
+                                                <ul class="sm_li_dep">
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=traking"
+                                                            class="sm_dep_m2">서울트레킹</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=skating"
+                                                            class="sm_dep_m2">가족스케이팅교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=famliy"
+                                                            class="sm_dep_m2">가족수상스포츠교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=parkgolf"
+                                                            class="sm_dep_m2">가족파크골프교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=camp"
+                                                            class="sm_dep_m2">가족스포츠캠프</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=workleague"
+                                                            class="sm_dep_m2">직장인스포츠리그</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=gym"
+                                                            class="sm_dep_m2">찾아가는 체육관</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- //시민참여프로그램 -->
+                                    </ul>
+                                    <div class="m-sitetop_right pc">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <!-- //sitemap_inner -->
+                            </div>
+                        </div>
+                        <!--//sitemap-->
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="u-page-breadcrumb sub p-0">
+                    <div class="u-page-breadcrumb__wrap">
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--home">
+                            <a href="/user/main/main" class="u-page-breadcrumb__link">메인</a>
+                        </div>
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--last">
+                            <a href="javascript:void(0);" class="u-page-breadcrumb__link">과제검색</a>
+                            <ul class="u-page-list  u-page-list--depth2">
+                                <li class="u-page-list__item active">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제 DB 소개</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/search/list" class="u-page-list__link">과제검색</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제통계</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/notice/list" class="u-page-list__link">공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__core">
+                    <h1 class="sub-title">회원가입</h1>
+
+
+                    <div class="join">
+                        <div class="form-check check-all mb_30">
+                            <input type="checkbox" name="all " id="all" value="" class="">
+                            <label for="all">전체동의</span></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" name="chk" id="essen" value="" class="">
+                            <label for="essen">혁신기업데이터뱅크 이용약관 동의 <span class="color-red">(필수)</span></label>
+                        </div>
+
+                        <div class="join__agree">제 1장 총 칙
+
+                            제1조 (목적)
+                            본 약관은 주식회사 혁신기업데이터뱅크(이하 데이터뱅크라 한다)가 운영하는 플랫폼과 마이서비스(이하 "플랫폼"이라 한다)에서 제공하는 서비스(이하 "서비스"라 한다)를
+                            통합 운영하고 제공함에 있어 이용자(이하 “이용자”)와의 이용조건 및 권리 의무와 절차 및 책임사항을 규정함을 목적으로 합니다.
+
+                            제2조(정의)
+                            "몰"이란 ”회사”가 이용자에게 재화 또는 용역(이하 "재화"이라 함)과 서비스를 컴퓨터 등 정보통신 설비를 이용하여 사용하고 거래할 수 있도록 설정한 가상의
+                            영업장과 웹사이트를 말하며, 아울러 인터넷쇼핑몰을 운영하는 사업자의 의미로도 사용합니다.
+                            "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 재화 및 서비스를 이용하는 회원 및 비회원을 말합니다.
+                            “회원”이라 함은 "몰"에 본 약관과 개인정보 제공에 동의하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 재화와 서비스를
+                            계속적으로 이용할 수 있는 개인 및 법인을 말합니다.
+                            “비회원”이라 함은 회원에 가입하지 않고 "몰"이 제공하는 재화와 서비스를 이용하는 자를 말합니다.
+                            "이용자아이디(이하 “ID”)"라 함은 "플랫폼"의 이용을 위하여 등록한 이메일주소 체계로 표기된 인식문자를 말합니다.
+                            "비밀번호"라 함은 “ID”회원임을 확인하고, 서비스 보안을 위해 회원이 설정하여 "플랫폼"에 통보한 8자리 이상 16자리 이하의 영문과 숫자, 특수문자를 혼용하여
+                            표기한 암호문자를 말합니다. 회원의 안전한 서비스를 이용을 위해 비밀번호 구성 중 유출이 쉬운 비밀번호의 이용에 관해서는 "플랫폼"에서 일부 제한 할 수 있습니다.
+                            "본인인증수단"이라 함은 휴대폰 본인인증, 실명인증+휴대폰인증, 실명인증+이메일인증 등 "플랫폼"에서 회원 가입, 로그인, 아이디 찾기, 비밀번호 등 변경에 필요한
+                            서비스 보안을 위하여 "플랫폼"이 정한 인증수단을 말합니다.
+                            "인증정보"란 “ID”, 비밀번호 설정에 필요한 정보를 말합니다.
+                            "생체정보"란 지문, 홍채, 정맥, 안면, 음성 등 개인을 식별할 수 있는 신체적 또는 행동적 특징에 관한 정보를 의미 합니다.
+                            “영업일”이란 회사가 정상적으로 서비스를 제공한 날로서 대한민국 기준, 토요일, 일요일 및 법정 공휴일을 제외한 날을 말합니다.
+                            “구매안전서비스”란 회사가 구매자가 결제한 결제대금을 보호하기 위하여 일정기간 결제대금을 예치하는 서비스를 말합니다.
+                            “안전거래센터”란 서비스 이용 중 거래의 안전과 관련하여 발생할 수 있는 문제를 조정하기 위한 기구를 말합니다.
+                            “분쟁조정센터”란 "플랫폼"을 통한 거래에서 분쟁이 발생하면 판매자와 구매자가 자율적으로 해결하는 것이 원칙이지만, 분쟁의 합리적이고 원활한 조정을 위하여 예외적으로
+                            회사가 설치 운영하는 분쟁조정기구를 말합니다.
+                            “전자결제대행수수료”란 구매자가 신용카드, 실시간계좌이체를 통해 상품을 구매 시 PG사에 지불해야 하는 수수료를 말합니다.
+                            “마이서비스”(이하 “혁신기업데이터뱅크클럽”)은 "플랫폼"이 회원에게 제공하는 멤버십서비스로 서비스의 개요는 본 약관 제3조와 같습니다.
+                            "제휴가맹점"은 데이터뱅크와 제휴 계약을 체결하여 “혁신기업데이터뱅크클럽” 서비스를 운영하기로 합의한 개인 또는 법인 등을 말합니다.
+                            “혁신기업데이터뱅크마일리지” (이하 “마일리지”)란 회원이 "플랫폼"과 “제휴가맹점”에서 재화 및 서비스 구매 시 제공되는 것으로써 회원이 본 약관에 따라
+                            혁신기업데이터뱅크클럽 서비스를 이용하기 위하여 취득하는 것으로 세부사항은 본 약관 제8조와 같습니다.
+                            “혁신기업데이터뱅크마일리지 비밀번호”란 “혁신기업데이터뱅크클럽”을 이용하기 위해 이용자가 설정한 4자리 이상의 숫자를 사용하여 표기한 암호문자를 말합니다. 회원의
+                            안전한 서비스의 이용을 위해 비밀번호 구성 중 유출이 쉬운 비밀번호의 이용에 관해서는 회사에서 일부 제한 할 수 있습니다.
+                            “접근매체”라 함은 전자금융거래에 있어서 거래 지시를 하거나 회원 및 거래 내용의 진실성과 정확성을 확보하기 위하여 사용되는 “회원번호”, “ID”, “비밀번호”,
+                            “전자식카드”, “인증서” 등을 말합니다.
+                            “혁신기업데이터뱅크클럽 제휴카드”(이하 “제휴카드”)는 혁신기업데이터뱅크클럽의 기본적인 멤버십, 마일리지 서비스와 카드사 혹은 제휴사의 추가 서비스가 탑재된
+                            신용카드, 체크카드, 선불카드 및 멤버십카드등을 말합니다.
+                            회원의 회원가입신청이 승낙되지 않으면 가입대기중 (이하 “신청중 회원”) 상태로 분류하고 개인정보처리방침에 따라 보관/운영합니다.
+                        </div>
+
+                        <div class="form-check mt_40">
+                            <input type="checkbox" name="chk" id="essen2" value="" class="">
+                            <label for="essen2">개인정보 수집 및 이용동의 <span class="color-red">(필수)</span></label>
+                        </div>
+
+                        <div class="join__agree">1. 개인정보 수집 및 이용목적
+
+                            데이터뱅크는 업무처리를 위하여 고객으로부터 최소한의 필수정보를 수집하며, 제공한 모든 개인정보는 별도의 동의가 없는 한 해당목적 이외의 다른 목적으로 사용하지
+                            않습니다.
+                            데이터뱅크는 수집한 개인정보를 다음의 목적을 위하여 사용합니다.
+                            가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산
+                        </div>
+
+
+                        <div class="d-flex form">
+                            <div class="form__inner d-flex">
+                                <input type="text" placeholder="사업자등록번호를 입력해 주세요. (숫자만 입력)">
+                                <button type="button">기관인증</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- <div style="margin-top: 174rem;"></div> -->
+        <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img05.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="footer__etc">
+                        <div class="footer__logo text-center">
+                            <img src="../../inc/resource/image/logo__footer.png" alt="">
+                        </div>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="javascript:void(0)">서비스이용약관</a></li>
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                        <p>06152 서울특별시 강남구 테헤란로 305 한국기술센터 2~7층, 14층&nbsp;&nbsp;&nbsp;&nbsp;테헤란로 309 삼성제일빌딩 4,
+                            9층&nbsp;&nbsp;&nbsp;&nbsp; TEL. 02-6009-3000</p>
+                        <p>Copyrightⓒ 2021 혁신기업데이터뱅크 All rights reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    //check 전체 동의 클릭시
+    $(document).ready(function () {
+        $("#all").click(function () {
+            if ($("#all").is(':checked') == true) {
+                $("input[name=chk]").prop("checked", true);
+
+            } else {
+                $("input[name=chk]").prop("checked", false);
+            }
+        });
+    });
+</script>
+
+</html>

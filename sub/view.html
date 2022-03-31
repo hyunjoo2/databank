@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혁신기업 데이터뱅크</title>
+
+    <!-- <link rel="shortcut icon" href="../inc/resource/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../inc/resource/image/favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../inc/resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../inc/resource/css/slick.css">
+
+    <link rel="stylesheet" href="../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../inc/resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../inc/resource/css/common.css"> -->
+    <link rel="stylesheet" href="../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../inc/resource/css/sub.css">
+    <!-- <link rel="stylesheet" href="../inc/resource/css/test.css"> -->
+
+    <script src="../inc/resource/js/popper.js"></script>
+    <script src="../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../inc/resource/js/swiper.min.js"></script>
+    <script src="../inc/resource/js/slick.min.js"></script>
+    <script src="../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../inc/resource/js/common.js"></script>
+    <script src="../inc/resource/js/main.js"></script>
+
+    <script src="../inc/resource/js/ie11CustomProperties.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+
+            <div class="header d-flex">
+                <div class="header__inner d-flex align-items-center">
+                    <div class="header__logo">
+                        <a href="javascript:void(0)"><img src="../inc/resource/image/logo__sub.png" alt=""></a>
+                    </div>
+                    <div class="header__gnb">
+                        <div class="gnb">
+                            <div class="gnb__inner">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="javascript:void(0)">소개</a></li>
+                                    <li><a href="javascript:void(0)">혁신기업</a></li>
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__utility d-flex justify-content-end">
+                        <div class="button-home">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon home"></i>
+                                <p>HOME</p>
+                            </button>
+                        </div>
+                        <div class="button-join">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon join"></i>
+                                <p>JOIN</p>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon login"></i>
+                                <p>LOGIN</p>
+                            </button>
+                        </div>
+                        <div class="sitemap d-flex flex-column align-items-center justify-content-center">
+                            <!-- <button type="button" class="sitemap-button">
+                                <div class="sitemap-buttonwrap d-flex justify-content-between flex-column">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button> -->
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon menu"></i>
+                                <p>MENU</p>
+                            </button>
+                            <div class="sitemap_cont">
+                                <em class="bg"></em>
+                                <!-- sitemap_inner -->
+                                <div class="d-flex m-sitetop">
+                                    <div class="m-sitetop_right">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <div class="sitemap_inner">
+                                    <ul>
+                                        <!-- 시민참여프로그램 -->
+                                        <li class="sm_dep"><a href="javascript:void(0)" class="sm_dep_m">시민참여프로그램</a>
+                                            <div class="sm_dep2">
+                                                <ul class="sm_li_dep">
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=traking"
+                                                            class="sm_dep_m2">서울트레킹</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=skating"
+                                                            class="sm_dep_m2">가족스케이팅교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=famliy"
+                                                            class="sm_dep_m2">가족수상스포츠교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=parkgolf"
+                                                            class="sm_dep_m2">가족파크골프교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=camp"
+                                                            class="sm_dep_m2">가족스포츠캠프</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=workleague"
+                                                            class="sm_dep_m2">직장인스포츠리그</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=gym"
+                                                            class="sm_dep_m2">찾아가는 체육관</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- //시민참여프로그램 -->
+                                    </ul>
+                                    <div class="m-sitetop_right pc">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <!-- //sitemap_inner -->
+                            </div>
+                        </div>
+                        <!--//sitemap-->
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="u-page-breadcrumb sub p-0">
+                    <div class="u-page-breadcrumb__wrap">
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--home">
+                            <a href="/user/main/main" class="u-page-breadcrumb__link">메인</a>
+                        </div>
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--last">
+                            <a href="javascript:void(0);" class="u-page-breadcrumb__link">과제검색</a>
+                            <ul class="u-page-list  u-page-list--depth2">
+                                <li class="u-page-list__item active">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제 DB 소개</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/search/list" class="u-page-list__link">과제검색</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제통계</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/notice/list" class="u-page-list__link">공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__core mb-0">
+                    <h1 class="sub-title">혁신기업</h1>
+                    
+
+
+                    <div class="content__view  clearfix">
+                        <div class="d-flex align-items-center">
+                            <h2 class="company__name">한국항공우주산업(주)</h2>
+                            <div class="compant__logo ml-auto">
+                                <img src="../inc/resource/image/company__logo--img01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="table mb_45">
+                            <div class="table__inner ver">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>설립일자</th>
+                                            <td>1999.12.14</td>
+                                            <!-- 지도 영역 -->
+                                            <!-- td에 해당 class 적용 시켜 주세요 -->
+                                            <td rowspan="5" class="map p-0">
+                                                <img src="../inc/resource/image/img-map.jpg" alt="" style="display: block; width: 100%; object-fit: fill;">
+                                            </td>
+                                            <!-- //지도 영역 -->
+                                        </tr>
+                                        <tr>
+                                            <th>대표자명</th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th>종업원수</th>
+                                            <td>100명</td>
+                                        </tr>
+                                        <tr>
+                                            <th>홈페이지</th>
+                                            <td><a href="http://homepage.com" target="_blank">http://homepage.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>주소</th>
+                                            <td>[11100] 서울시 금천구 가산동 1번길 1</td>
+                                        </tr>
+                                
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="company__info">주요정보</h3>
+                            <div class="table mb_55">
+                                <div class="table__inner ver">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>설립일자</th>
+                                                <td>1999.12.14</td>
+                                            </tr>
+                                            <tr>
+                                                <th>대표자명</th>
+                                                <td>홍길동</td>
+                                            </tr>
+                                            <tr>
+                                                <th>주력제품</th>
+                                                <td class="">
+                                                    <div class="company__goods d-flex">
+                                                        <div>
+                                                            <img src="../inc/resource/image/company__goods--img01.jpg" alt="">
+                                                            <p>회전익</p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="../inc/resource/image/company__goods--img01.jpg" alt="">
+                                                            <p>회전익</p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="../inc/resource/image/company__goods--img01.jpg" alt="">
+                                                            <p>회전익</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>인증</th>
+                                                <td class="p-0">
+                                                    <table class="text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>인증기관</th>
+                                                                <th>인증명</th>
+                                                                <th>인증기간</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>산업통상자원부</td>
+                                                                <td>월드클래스300</td>
+                                                                <td>2020.01.01 ~ 2020.12.31</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>산업통상자원부</td>
+                                                                <td>월드클래스300</td>
+                                                                <td>2020.01.01 ~ 2020.12.31</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>국가 R&D과제 및 연구비</th>
+                                                <td class="p-0">
+                                                    <table class="text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>연구기간</th>
+                                                                <th>과제명</th>
+                                                                <th>사업비</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>2020.01.01 ~ 2020.12.31</td>
+                                                                <td>차세대중형위성 2단계 개발사업 3기</td>
+                                                                <td>276,556 백만원</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2020.01.01 ~ 2020.12.31</td>
+                                                                <td>차세대중형위성 2단계 개발사업 3기</td>
+                                                                <td>276,556 백만원</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg_gray">
+                    <div class="content__core my-0">
+                        <div class="content__tab">
+                            <ul class="tab d-flex justify-content-between">
+                                <li class="current" data-tab="tab01">R&amp;D 현황</li>
+                                <li class="" data-tab="tab02">기업 재무 · 신용 정보</li>
+                                <li class="" data-tab="tab03">기업 특허 정보</li>
+                            </ul>
+                            <div class="tabcontent current" id="tab01">
+                                <img src="../inc/resource/image/img__graph01.png" alt="" style="display: block; margin: 0 auto;">
+                            </div>
+                            <div class="tabcontent" id="tab02">2222</div>
+                            <div class="tabcontent " id="tab03">333</div>
+                        </div>
+                        <div class="content__tab2">
+                            <ul class="tab d-flex justify-content-between">
+                                <li class="current" data-tab="tab04">R&amp;D 현황</li>
+                                <li class="" data-tab="tab05">기업 재무 · 신용 정보</li>
+                                <li class="" data-tab="tab06">기업 특허 정보</li>
+                            </ul>
+                            <div class="tabcontent current" id="tab04">
+                                <img src="../inc/resource/image/img__graph02.png" alt="" style="display: block; margin: 0 auto;">
+                            </div>
+                            <div class="tabcontent" id="tab05">2222</div>
+                            <div class="tabcontent " id="tab06">333</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+        <!-- <div style="margin-top: 174rem;"></div> -->
+        <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../inc/resource/image/banner__img01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../inc/resource/image/banner__img02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../inc/resource/image/banner__img03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../inc/resource/image/banner__img04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../inc/resource/image/banner__img05.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="footer__etc">
+                        <div class="footer__logo text-center">
+                            <img src="../inc/resource/image/logo__footer.png" alt="">
+                        </div>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="javascript:void(0)">서비스이용약관</a></li>
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                        <p>06152 서울특별시 강남구 테헤란로 305 한국기술센터 2~7층, 14층&nbsp;&nbsp;&nbsp;&nbsp;테헤란로 309 삼성제일빌딩 4, 9층&nbsp;&nbsp;&nbsp;&nbsp; TEL. 02-6009-3000</p>
+                        <p>Copyrightⓒ 2021 혁신기업데이터뱅크 All rights reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    $(function () {
+        
+
+
+
+
+
+    })
+</script>
+
+</html>
