@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혁신기업 데이터뱅크</title>
+
+    <!-- <link rel="shortcut icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../inc/resource/image/favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="../../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../../inc/resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/slick.css">
+
+    <link rel="stylesheet" href="../../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../../inc/resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/common.css"> -->
+    <link rel="stylesheet" href="../../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../../inc/resource/css/sub.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/test.css"> -->
+
+    <script src="../../inc/resource/js/popper.js"></script>
+    <script src="../../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../../inc/resource/js/swiper.min.js"></script>
+    <script src="../../inc/resource/js/slick.min.js"></script>
+    <script src="../../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../../inc/resource/js/common.js"></script>
+    <script src="../../inc/resource/js/main.js"></script>
+
+    <script src="../../inc/resource/js/ie11CustomProperties.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+
+            <div class="header d-flex">
+                <div class="header__inner d-flex align-items-center">
+                    <div class="header__logo">
+                        <a href="javascript:void(0)"><img src="../../inc/resource/image/logo__sub.png" alt=""></a>
+                    </div>
+                    <div class="header__gnb">
+                        <div class="gnb">
+                            <div class="gnb__inner">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="javascript:void(0)">소개</a></li>
+                                    <li><a href="javascript:void(0)">혁신기업</a></li>
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__utility d-flex justify-content-end">
+                        <div class="button-home">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon home"></i>
+                                <p>HOME</p>
+                            </button>
+                        </div>
+                        <div class="button-join">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon join"></i>
+                                <p>JOIN</p>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon login"></i>
+                                <p>LOGIN</p>
+                            </button>
+                        </div>
+                        <div class="sitemap d-flex flex-column align-items-center justify-content-center">
+                            <!-- <button type="button" class="sitemap-button">
+                                <div class="sitemap-buttonwrap d-flex justify-content-between flex-column">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button> -->
+                            <button type="button" class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                <i class="icon menu"></i>
+                                <p>MENU</p>
+                            </button>
+                            <div class="sitemap_cont">
+                                <em class="bg"></em>
+                                <!-- sitemap_inner -->
+                                <div class="d-flex m-sitetop">
+                                    <div class="m-sitetop_right">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <div class="sitemap_inner">
+                                    <ul>
+                                        <!-- 시민참여프로그램 -->
+                                        <li class="sm_dep"><a href="javascript:void(0)" class="sm_dep_m">시민참여프로그램</a>
+                                            <div class="sm_dep2">
+                                                <ul class="sm_li_dep">
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=traking"
+                                                            class="sm_dep_m2">서울트레킹</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=skating"
+                                                            class="sm_dep_m2">가족스케이팅교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=famliy"
+                                                            class="sm_dep_m2">가족수상스포츠교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=parkgolf"
+                                                            class="sm_dep_m2">가족파크골프교실</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=camp"
+                                                            class="sm_dep_m2">가족스포츠캠프</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=workleague"
+                                                            class="sm_dep_m2">직장인스포츠리그</a></li>
+                                                    <li><a href="/user/citizenAction/userCitizenProgramList.do?citizenParam=gym"
+                                                            class="sm_dep_m2">찾아가는 체육관</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- //시민참여프로그램 -->
+                                    </ul>
+                                    <div class="m-sitetop_right pc">
+                                        <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+                                    </div>
+                                </div>
+                                <!-- //sitemap_inner -->
+                            </div>
+                        </div>
+                        <!--//sitemap-->
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="u-page-breadcrumb sub p-0">
+                    <div class="u-page-breadcrumb__wrap">
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--home">
+                            <a href="/user/main/main" class="u-page-breadcrumb__link">메인</a>
+                        </div>
+                        <div class="u-page-breadcrumb__item u-page-breadcrumb__item--last">
+                            <a href="javascript:void(0);" class="u-page-breadcrumb__link">과제검색</a>
+                            <ul class="u-page-list  u-page-list--depth2">
+                                <li class="u-page-list__item active">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제 DB 소개</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/search/list" class="u-page-list__link">과제검색</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="javascript:void(0)" class="u-page-list__link">과제통계</a>
+                                </li>
+                                <li class="u-page-list__item ">
+                                    <a href="/user/db/notice/list" class="u-page-list__link">공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__core">
+                    <h1 class="sub-title">협력기업 찾기</h1>
+
+                    <!-- 220331 변경사항 -->
+					<div class="des d-flex align-items-center justify-content-center flex-column">
+                        <ul class="list-dashed color-black">
+                            <li>협력기업 찾기’ 게시판은, 시스템 비회원 기업이 혁신기업과의 협력을 원하는 경우 게시판을 통해 협력내용을 등록해주시면 됩니다.</li>
+                            <li>등록된 글은 작성자, 혁신기업 데이터뱅크 회원일 경우 확인이 가능합니다.</li>
+                        </ul>
+						<!-- <p>혁신기업과의 업무 제휴와 협력을 위해 혁신기업 알리기를 이용하실 수 있습니다.</p> -->
+						<div class="button-wrap text-center mt_20">
+							<button id="btnCoorp" type="button">혁신기업 알리기 바로가기</button>
+						</div>
+					</div>
+                    <!-- //220331 변경사항 -->
+
+					<form id="searchForm" name="searchForm" class="mt_40" method="GET" action="/user/cooperation">
+						<input type="hidden" name="itemStr" id="itemStr" value="">
+						<div class="d-flex search__top">
+							<div class="d-flex">
+								<select id="search_type" name="search_type" class="select">
+									<option value="">기업형태</option>
+									<option value="Y">상장</option>
+									<option value="N">비상장</option>
+								</select>
+								<select id="search_div" name="search_div" class="select">
+									<option value="">산업분류</option>
+								<option value="CRDT001">A(농업, 임업 및 어업)</option><option value="CRDT002">C(제조업)</option><option value="CRDT003">D(전기, 가스, 증기 및 공기 조절 공급업)</option><option value="CRDT004">E(수도, 하수 및 폐기물 처리, 원료 재생업)</option><option value="CRDT005">G(도매 및 소매업)</option><option value="CRDT006">J(정보통신업)</option><option value="CRDT007">K(금융 및 보험업)</option><option value="CRDT008">M(전문, 과학 및 기술 서비스업)</option><option value="CRDT009">기타</option></select>
+								<select id="search_scale" name="search_scale" class="select">
+									<option value="">기업규모</option>
+								<option value="CMTP004">대기업</option><option value="CMTP001">중견기업</option><option value="CMTP002">중소기업</option></select>
+								<select id="search_cert" name="search_cert" class="select">
+									<option value="">분류</option>
+								<option value="CRTD001">분류1</option><option value="CRTD002">분류2</option><option value="CRTD003">분류3</option></select>
+							</div>
+							<div class="d-flex ml-auto search__right">
+								<div class="form-search">
+									<input type="text" id="searchKeyword" name="searchKeyword" value="" placeholder="검색어를 입력해 주세요.">
+									<button type="submit" id="searchItem" class="form-search__click">검색</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<div class="index">
+						<div id="" class="d-flex index__inner">
+							<div>
+								<button type="button" value="" class="searchbtn all on">ALL</button>
+							</div>
+							<div class="index__char">
+								<div>
+									<button type="button" class="searchbtn" value="ㄱ">ㄱ</button>
+									<button type="button" class="searchbtn" value="ㄴ">ㄴ</button>
+									<button type="button" class="searchbtn" value="ㄷ">ㄷ</button>
+									<button type="button" class="searchbtn" value="ㄹ">ㄹ</button>
+									<button type="button" class="searchbtn" value="ㅁ">ㅁ</button>
+									<button type="button" class="searchbtn" value="ㅂ">ㅂ</button>
+									<button type="button" class="searchbtn" value="ㅅ">ㅅ</button>
+									<button type="button" class="searchbtn" value="ㅇ">ㅇ</button>
+									<button type="button" class="searchbtn" value="ㅈ">ㅈ</button>
+									<button type="button" class="searchbtn" value="ㅊ">ㅊ</button>
+									<button type="button" class="searchbtn" value="ㅋ">ㅋ</button>
+									<button type="button" class="searchbtn" value="ㅌ">ㅌ</button>
+									<button type="button" class="searchbtn" value="ㅍ">ㅍ</button>
+									<button type="button" class="searchbtn" value="ㅎ">ㅎ</button>
+								</div>
+								<div>
+									<button type="button" class="searchbtn" value="A">A</button>
+									<button type="button" class="searchbtn" value="B">B</button>
+									<button type="button" class="searchbtn" value="C">C</button>
+									<button type="button" class="searchbtn" value="D">D</button>
+									<button type="button" class="searchbtn" value="E">E</button>
+									<button type="button" class="searchbtn" value="F">F</button>
+									<button type="button" class="searchbtn" value="G">G</button>
+									<button type="button" class="searchbtn" value="H">H</button>
+									<button type="button" class="searchbtn" value="I">I</button>
+									<button type="button" class="searchbtn" value="J">J</button>
+									<button type="button" class="searchbtn" value="K">K</button>
+									<button type="button" class="searchbtn" value="L">L</button>
+									<button type="button" class="searchbtn" value="M">M</button>
+									<button type="button" class="searchbtn" value="N">N</button>
+									<button type="button" class="searchbtn" value="O">O</button>
+									<button type="button" class="searchbtn" value="P">P</button>
+									<button type="button" class="searchbtn" value="Q">Q</button>
+									<button type="button" class="searchbtn" value="R">R</button>
+									<button type="button" class="searchbtn" value="S">S</button>
+									<button type="button" class="searchbtn" value="T">T</button>
+									<button type="button" class="searchbtn" value="U">U</button>
+									<button type="button" class="searchbtn" value="V">V</button>
+									<button type="button" class="searchbtn" value="W">W</button>
+									<button type="button" class="searchbtn" value="X">X</button>
+									<button type="button" class="searchbtn" value="Y">Y</button>
+									<button type="button" class="searchbtn" value="Z">Z</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					<div class="des d-flex align-items-left justify-content-left" style="margin-top: 20px;">
+						<p>혁신 기업은 로그인 하신 후 확인 가능하며, 협력기업은 작성하신 기업만 열람 및 수정이 가능합니다.</p>
+					</div>
+					<div class="table mb_55">
+						<div class="table__inner ver notice text-center">
+							<table id="listTable">
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:15%">
+									<col style="width:auto">
+									<col style="width:20%">
+									<col style="width:15%">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">NO</th>
+									<th scope="col">기업명</th>
+									<th scope="col">제목</th>
+									<th scope="col">주요기술</th>
+									<th scope="col">등록일</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>3</td>
+									<td>협력업체</td>
+									<td style="text-align: left"><span class="promotiontitle" style="cursor: pointer" data-indexkey="2" data-viewurl="?currentPageNo=1&amp;itemStr&amp;search_type&amp;search_div&amp;search_cert&amp;search_scale&amp;searchKeyword&amp;cooperation_pk=2">[분류1] 협력을 요청합니다</span></td>
+									<td style="text-align: left">기계설비 제작, 자동제어시스템 제작</td>
+									<td>2022-01-04 10:42:35</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>가온시스템</td>
+									<td style="text-align: left"><span class="promotiontitle" style="cursor: pointer" data-indexkey="3" data-viewurl="?currentPageNo=1&amp;itemStr&amp;search_type&amp;search_div&amp;search_cert&amp;search_scale&amp;searchKeyword&amp;cooperation_pk=3">[분류2] 협력업체를 찾습니다</span></td>
+									<td style="text-align: left">설비제작 및 포장재 생산</td>
+									<td>2022-01-04 15:55:43</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>기업명 테스트</td>
+									<td style="text-align: left"><span class="promotiontitle" style="cursor: pointer" data-indexkey="4" data-viewurl="?currentPageNo=1&amp;itemStr&amp;search_type&amp;search_div&amp;search_cert&amp;search_scale&amp;searchKeyword&amp;cooperation_pk=4">[분류1] 협력을 원합니다.</span></td>
+									<td style="text-align: left">기술1, 기술2</td>
+									<td>2022-01-07 08:39:33</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+						<div aria-label="Page navigation" class="paging">
+    
+    
+    <a href="javascript:void(0)" class="on" onclick="movePage('/user/cooperation', '?currentPageNo=1&amp;search_sdt&amp;search_edt&amp;searchType&amp;searchKeyword')">1</a>
+    
+    
+</div>
+					
+					<div class="linkWrap" style="text-align: right;margin-top: 5px;">
+						<button type="button" id="btnWrite" class="btns bgDarkNavy">등록</button>
+					</div>
+
+                </div>
+               
+
+                
+
+
+
+            </div>
+        </div>
+        <!-- <div style="margin-top: 174rem;"></div> -->
+        <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../inc/resource/image/banner__img05.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="footer__etc">
+                        <div class="footer__logo text-center">
+                            <img src="../../inc/resource/image/logo__footer.png" alt="">
+                        </div>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="javascript:void(0)">서비스이용약관</a></li>
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                        <p>06152 서울특별시 강남구 테헤란로 305 한국기술센터 2~7층, 14층&nbsp;&nbsp;&nbsp;&nbsp;테헤란로 309 삼성제일빌딩 4, 9층&nbsp;&nbsp;&nbsp;&nbsp; TEL. 02-6009-3000</p>
+                        <p>Copyrightⓒ 2021 혁신기업데이터뱅크 All rights reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    $(function () {
+        
+
+
+
+
+
+    })
+</script>
+
+</html>

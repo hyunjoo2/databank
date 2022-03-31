@@ -251,7 +251,9 @@ ul.list-dashed { position: relative; }
 
 ul.list-dashed li { position: relative; padding-left: 1rem; font-size: 2rem; color: #78838c; line-height: 3rem; }
 
-ul.list-dashed li::before { position: absolute; top: 1.2rem; left: 0; width: .5rem; height: .1rem; background: #78838c; content: ""; }
+ul.list-dashed li::before { position: absolute; top: 1.5rem; left: 0; width: .5rem; height: .1rem; background: #78838c; content: ""; }
+
+ul.list-dashed.color-black li{color:#000000;}
 
 /* select */
 select { height: 4.5rem; padding: 0 7rem 0 2rem; margin-right: 1rem; font-size: 1.6rem; border: .1rem solid #acacac; background: url(../image/icon/icon-selectdown.png) no-repeat right 2rem center; background-size:1.4rem .8rem; text-indent: 0; line-height: 4.5rem; border-radius:0;}
@@ -363,7 +365,8 @@ input.date { background: url(../image/icon/icon-calendar.png) no-repeat right 1r
 
 .table__inner.notice th { padding: 2rem 0; border-bottom: .1rem solid #a6a8aa; border-right: none; }
 
-.table__inner.notice td { padding: 2rem 0; border-right: none; font-weight: 300; }
+.table__inner.notice td {  font-size: 1.8rem; padding: 2rem 0; border-right: none; font-weight: 300; }
+.table__inner.notice td>* { font-size: 1.8rem; }
 
 .table__inner.notice td:last-child { border-left: none; }
 
@@ -850,7 +853,7 @@ div.d-flex.w-100.color-red{padding-right:0;}
 .box_small_c {/* 취하 */
 	background: #f8aa04;
 }
-.box_small_g { /* 포기 */
+.box_small_g {/* 포기 */
 	background: #8c59a4;
 }
 
